@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Results (optional - uncomment if you don't want to track generated results)
+# results/detection_output/
+# results/analysis/*.jpg
+
+# Large files
+*.pt
+*.pth
+*.h5
+*.pb
+
+# Data and results - do not track images/large files, but keep directory structure
+results/detection_output/*
+!results/detection_output/README.md
+data/DatasetId_360176_1652587113/Images/*
+!data/DatasetId_360176_1652587113/Images/README.md
+data/DatasetId_360176_1652587113/Annotations/*
+!data/DatasetId_360176_1652587113/Annotations/README.md
+
