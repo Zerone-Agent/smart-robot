@@ -1,27 +1,9 @@
 # config/algorithm_params.yaml
-hsv_thresholds:
-  # Red (ripe tomatoes)
-  lower_red1: [0, 80, 50]
-  upper_red1: [10, 255, 255]
-  lower_red2: [160, 80, 50]
-  upper_red2: [180, 255, 255]
-  # Green (unripe tomatoes) - narrower range to avoid leaves
-  green_lower: [35, 50, 40]
-  green_upper: [75, 255, 255]
-  # Orange/Yellow (ripening tomatoes)
-  orange_lower: [10, 80, 50]
-  orange_upper: [25, 255, 255]
 
-morphology:
-  open_kernel_size: 5
-  close_kernel_size: 7
-  iterations: 2
-
-contour_filter:
-  min_area: 2000
-  max_area: 50000
-  min_circularity: 0.5
-  max_aspect_ratio: 2.0
+yolo:
+  model_path: "external_models/model_hub_n.pt"
+  conf_threshold: 0.5
+  iou_threshold: 0.45
 
 priority_scoring:
   weights:
@@ -31,4 +13,4 @@ priority_scoring:
     distance: 0.2
 
 depth_estimation:
-  real_diameter_mm: 80  # 番茄平均直径 80mm
+  real_diameter_mm: 80

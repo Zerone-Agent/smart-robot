@@ -52,6 +52,7 @@ class VisualizationNode(MockNode):
     def _image_callback(self, msg: Image):
         with self._lock:
             self._latest_image = msg.data.copy()
+        self._draw_and_save()
 
     def _detection_callback(self, msg: TomatoDetectionArray):
         with self._lock:
@@ -73,7 +74,11 @@ class VisualizationNode(MockNode):
             target = self._latest_target
             status = self._latest_status
 
-        if image is None or detections is None:
+        if image is None:
+            self.log("DEBUG", "Skip draw: no image received yet")
+            return
+        if not detections:
+            self.log("DEBUG", "Skip draw: no detections")
             return
 
         h, w = image.shape[:2]
@@ -87,7 +92,7 @@ class VisualizationNode(MockNode):
             )
 
             color = (0, 255, 0) if is_target else (0, 0, 255)
-            thickness = 3 if is_target else 2
+            thickness = 12 if is_target else 8
 
             # Bounding box
             cv2.rectangle(
@@ -96,32 +101,32 @@ class VisualizationNode(MockNode):
 
             # Center point
             cx, cy = int(det.center_uv[0]), int(det.center_uv[1])
-            cv2.circle(image, (cx, cy), 5, color, -1)
+            cv2.circle(image, (cx, cy), 12, color, -1)
 
             # Label
             label = f"ID:{det.tomato_id} C:{det.confidence:.2f} M:{det.maturity_score:.2f}"
-            label_y = max(y - 10, 20)
+            label_y = max(y - 30, 60)
             cv2.putText(
                 image,
                 label,
                 (x, label_y),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                0.5,
+                3.0,
                 color,
-                2,
+                6,
             )
 
             # 3D coordinates
             coord_text = f"3D: ({det.center_3d[0]:.0f}, {det.center_3d[1]:.0f}, {det.center_3d[2]:.0f})mm"
-            coord_y = min(y + h_box + 20, h - 10)
+            coord_y = min(y + h_box + 60, h - 20)
             cv2.putText(
                 image,
                 coord_text,
                 (x, coord_y),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                0.5,
+                2.0,
                 color,
-                2,
+                5,
             )
 
         # Draw status info
@@ -130,11 +135,11 @@ class VisualizationNode(MockNode):
             cv2.putText(
                 image,
                 status_text,
-                (10, 30),
+                (20, 80),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                0.6,
+                1.5,
                 (255, 255, 255),
-                2,
+                4,
             )
 
         # Save
