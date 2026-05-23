@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "total_images_processed": 100,
+    "total_tomatoes_detected": 161,
+    "avg_detections_per_image": 1.61,
+    "overall_avg_confidence": 0.767,
+    "overall_avg_maturity": 0.911,
+    "overall_avg_distance_mm": 713.5
+  },
+  "scene_breakdown": {
+    "unknown": {
+      "images": 100,
+      "detections": 161,
+      "avg_confidence": 0.767,
+      "avg_detections_per_image": 1.61
+    }
+  },
+  "top_detections": [
+    {
+      "filename": "IMG_20191215_112428.jpg",
+      "scene": "unknown",
+      "detections": 1,
+      "avg_confidence": 0.857,
+      "avg_maturity": 1.0
+    },
+    {
+      "filename": "IMG_20191215_112519.jpg",
+      "scene": "unknown",
+      "detections": 1,
+      "avg_confidence": 0.855,
+      "avg_maturity": 0.993
+    },
+    {
+      "filename": "IMG_1034.jpg",
+      "scene": "unknown",
+      "detections": 1,
+      "avg_confidence": 0.829,
+      "avg_maturity": 0.997
+    },
+    {
+      "filename": "IMG_1137.jpg",
+      "scene": "unknown",
+      "detections": 4,
+      "avg_confidence": 0.819,
+      "avg_maturity": 0.866
+    },
+    {
+      "filename": "IMG_20191215_112517.jpg",
+      "scene": "unknown",
+      "detections": 3,
+      "avg_confidence": 0.818,
+      "avg_maturity": 0.931
+    },
+    {
+      "filename": "IMG_20191215_112904.jpg",
+      "scene": "unknown",
+      "detections": 5,
+      "avg_confidence": 0.815,
+      "avg_maturity": 0.972
+    },
+    {
+      "filename": "IMG_20191215_112033.jpg",
+      "scene": "unknown",
+      "detections": 2,
+      "avg_confidence": 0.814,
+      "avg_maturity": 0.94
+    },
+    {
+      "filename": "IMG_20191215_111517.jpg",
+      "scene": "unknown",
+      "detections": 1,
+      "avg_confidence": 0.808,
+      "avg_maturity": 0.875
+    },
+    {
+      "filename": "IMG_1269.jpg",
+      "scene": "unknown",
+      "detections": 7,
+      "avg_confidence": 0.804,
+      "avg_maturity": 0.952
+    },
+    {
+      "filename": "IMG_1284.jpg",
+      "scene": "unknown",
+      "detections": 9,
+      "avg_confidence": 0.799,
+      "avg_maturity": 0.953
+    }
+  ]
+}
