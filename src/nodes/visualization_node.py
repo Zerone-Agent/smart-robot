@@ -13,6 +13,7 @@ from src.mock_ros2.message_types import (
     SystemStatus,
     TomatoDetection,
 )
+from src.algorithms.yolo_detection import CLASS_COLORS
 
 
 class VisualizationNode(MockNode):
@@ -48,16 +49,19 @@ class VisualizationNode(MockNode):
         self._latest_target: Optional[TomatoDetection] = None
         self._latest_status: Optional[SystemStatus] = None
         self._frame_count = 0
+        self._drawn_image_id = -1
+        self._current_image_id = 0
 
     def _image_callback(self, msg: Image):
         with self._lock:
             self._latest_image = msg.data.copy()
-        self._draw_and_save()
+            self._current_image_id += 1
+        self._try_draw()
 
     def _detection_callback(self, msg: TomatoDetectionArray):
         with self._lock:
             self._latest_detections = msg.detections
-        self._draw_and_save()
+        self._try_draw()
 
     def _target_callback(self, msg: TomatoTarget):
         with self._lock:
@@ -67,19 +71,17 @@ class VisualizationNode(MockNode):
         with self._lock:
             self._latest_status = msg
 
-    def _draw_and_save(self):
+    def _try_draw(self):
         with self._lock:
-            image = self._latest_image.copy() if self._latest_image is not None else None
+            if self._current_image_id == self._drawn_image_id:
+                return
+            if self._latest_image is None or not self._latest_detections:
+                return
+            image = self._latest_image.copy()
             detections = self._latest_detections
             target = self._latest_target
             status = self._latest_status
-
-        if image is None:
-            self.log("DEBUG", "Skip draw: no image received yet")
-            return
-        if not detections:
-            self.log("DEBUG", "Skip draw: no detections")
-            return
+            self._drawn_image_id = self._current_image_id
 
         h, w = image.shape[:2]
 
@@ -91,7 +93,8 @@ class VisualizationNode(MockNode):
                 and det.tomato_id == target.tomato_id
             )
 
-            color = (0, 255, 0) if is_target else (0, 0, 255)
+            maturity_color = CLASS_COLORS.get(det.class_id, (0, 0, 255))
+            color = (0, 255, 255) if is_target else maturity_color
             thickness = 12 if is_target else 8
 
             # Bounding box
@@ -105,28 +108,28 @@ class VisualizationNode(MockNode):
 
             # Label
             label = f"ID:{det.tomato_id} C:{det.confidence:.2f} M:{det.maturity_score:.2f}"
-            label_y = max(y - 30, 60)
+            label_y = max(y - 25, 50)
             cv2.putText(
                 image,
                 label,
                 (x, label_y),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                3.0,
+                2.0,
                 color,
-                6,
+                4,
             )
 
             # 3D coordinates
             coord_text = f"3D: ({det.center_3d[0]:.0f}, {det.center_3d[1]:.0f}, {det.center_3d[2]:.0f})mm"
-            coord_y = min(y + h_box + 60, h - 20)
+            coord_y = min(y + h_box + 50, h - 15)
             cv2.putText(
                 image,
                 coord_text,
                 (x, coord_y),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                2.0,
+                1.5,
                 color,
-                5,
+                3,
             )
 
         # Draw status info
@@ -135,11 +138,11 @@ class VisualizationNode(MockNode):
             cv2.putText(
                 image,
                 status_text,
-                (20, 80),
+                (20, 70),
                 cv2.FONT_HERSHEY_SIMPLEX,
-                1.5,
+                1.2,
                 (255, 255, 255),
-                4,
+                3,
             )
 
         # Save

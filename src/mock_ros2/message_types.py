@@ -29,6 +29,7 @@ class TomatoDetection:
     circularity: float
     maturity_score: float
     confidence: float
+    class_id: int = 0        # 0=Fully-ripe, 1=Semi-ripe, 2=Unripe
 
 
 @dataclass

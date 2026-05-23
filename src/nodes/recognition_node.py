@@ -121,6 +121,7 @@ class RecognitionNode(MockNode):
                     circularity=det["circularity"],
                     maturity_score=det["maturity_score"],
                     confidence=det["confidence"],
+                    class_id=det.get("class_id", 0),
                 )
             )
 
