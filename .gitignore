@@ -50,10 +50,10 @@ htmlcov/
 # results/analysis/*.jpg
 
 # Large files
-*.pt
 *.pth
 *.h5
 *.pb
+*.zip
 
 # Data and results - do not track images/large files, but keep directory structure
 results/detection_output/*
