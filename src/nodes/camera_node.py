@@ -99,6 +99,9 @@ class CameraNode(MockNode):
         interval = 1.0 / self.publish_rate
         while not self._stop_event.is_set():
             self._publish_frame()
+            if self.current_index == 0:
+                self.log("INFO", "All images published, stopping")
+                break
             time.sleep(interval)
 
     def start(self):

@@ -146,6 +146,9 @@ def main():
             if image_counter and image_counter.count >= args.max_images:
                 print(f"[INFO] Reached max images limit: {args.max_images}")
                 break
+            if not camera_node._thread.is_alive():
+                print("[INFO] Camera node finished, all images processed")
+                break
     except KeyboardInterrupt:
         print("\n[INFO] Received KeyboardInterrupt, shutting down...")
 

@@ -1,90 +1,1117 @@
 {
   "summary": {
     "total_images_processed": 100,
-    "total_tomatoes_detected": 161,
-    "avg_detections_per_image": 1.61,
-    "overall_avg_confidence": 0.767,
-    "overall_avg_maturity": 0.911,
-    "overall_avg_distance_mm": 713.5
-  },
-  "scene_breakdown": {
-    "unknown": {
-      "images": 100,
-      "detections": 161,
-      "avg_confidence": 0.767,
-      "avg_detections_per_image": 1.61
+    "total_tomatoes_detected": 1441,
+    "avg_detections_per_image": 14.41,
+    "overall_avg_confidence": 0.829,
+    "overall_avg_maturity": 0.374,
+    "overall_avg_distance_mm": 343.0,
+    "class_distribution": {
+      "Fully-ripe": 170,
+      "Semi-ripe": 286,
+      "Unripe": 985
     }
   },
-  "top_detections": [
+  "per_image_details": [
     {
-      "filename": "IMG_20191215_112428.jpg",
-      "scene": "unknown",
+      "filename": "IMG_1193.jpg",
       "detections": 1,
-      "avg_confidence": 0.857,
-      "avg_maturity": 1.0
+      "avg_confidence": 0.967,
+      "avg_maturity": 1.0,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 0,
+        "Unripe": 0
+      }
     },
     {
-      "filename": "IMG_20191215_112519.jpg",
-      "scene": "unknown",
-      "detections": 1,
-      "avg_confidence": 0.855,
-      "avg_maturity": 0.993
+      "filename": "IMG_20191215_111753.jpg",
+      "detections": 2,
+      "avg_confidence": 0.963,
+      "avg_maturity": 0.6,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 0
+      }
+    },
+    {
+      "filename": "IMG_20191215_111504.jpg",
+      "detections": 2,
+      "avg_confidence": 0.959,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_1019.jpg",
+      "detections": 4,
+      "avg_confidence": 0.957,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_110937.jpg",
+      "detections": 2,
+      "avg_confidence": 0.957,
+      "avg_maturity": 0.6,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 0,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_111622.jpg",
+      "detections": 6,
+      "avg_confidence": 0.957,
+      "avg_maturity": 0.267,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 5
+      }
+    },
+    {
+      "filename": "IMG_20191215_110859.jpg",
+      "detections": 2,
+      "avg_confidence": 0.955,
+      "avg_maturity": 1.0,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 0,
+        "Unripe": 0
+      }
+    },
+    {
+      "filename": "IMG_20191215_110638.jpg",
+      "detections": 4,
+      "avg_confidence": 0.949,
+      "avg_maturity": 0.6,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 0,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_20191215_110834.jpg",
+      "detections": 4,
+      "avg_confidence": 0.947,
+      "avg_maturity": 0.5,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 1,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_1274.jpg",
+      "detections": 4,
+      "avg_confidence": 0.945,
+      "avg_maturity": 0.7,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 1,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_111548.jpg",
+      "detections": 5,
+      "avg_confidence": 0.939,
+      "avg_maturity": 0.44,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 3,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_1248.jpg",
+      "detections": 13,
+      "avg_confidence": 0.933,
+      "avg_maturity": 0.508,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 2,
+        "Unripe": 7
+      }
+    },
+    {
+      "filename": "IMG_20191215_110534.jpg",
+      "detections": 3,
+      "avg_confidence": 0.933,
+      "avg_maturity": 0.333,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_1008.jpg",
+      "detections": 3,
+      "avg_confidence": 0.93,
+      "avg_maturity": 0.467,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_111452.jpg",
+      "detections": 10,
+      "avg_confidence": 0.929,
+      "avg_maturity": 0.44,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 4,
+        "Unripe": 5
+      }
+    },
+    {
+      "filename": "IMG_1198.jpg",
+      "detections": 6,
+      "avg_confidence": 0.927,
+      "avg_maturity": 0.333,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 0,
+        "Unripe": 5
+      }
+    },
+    {
+      "filename": "IMG_20191215_110550.jpg",
+      "detections": 7,
+      "avg_confidence": 0.924,
+      "avg_maturity": 0.371,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 3,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_112601.jpg",
+      "detections": 7,
+      "avg_confidence": 0.921,
+      "avg_maturity": 0.943,
+      "class_counts": {
+        "Fully-ripe": 6,
+        "Semi-ripe": 1,
+        "Unripe": 0
+      }
+    },
+    {
+      "filename": "IMG_1229.jpg",
+      "detections": 3,
+      "avg_confidence": 0.915,
+      "avg_maturity": 0.6,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 1,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_1178.jpg",
+      "detections": 12,
+      "avg_confidence": 0.914,
+      "avg_maturity": 0.367,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 1,
+        "Unripe": 9
+      }
+    },
+    {
+      "filename": "IMG_20191215_110626.jpg",
+      "detections": 8,
+      "avg_confidence": 0.913,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 8
+      }
+    },
+    {
+      "filename": "IMG_20191215_111510.jpg",
+      "detections": 2,
+      "avg_confidence": 0.904,
+      "avg_maturity": 0.4,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_1134.jpg",
+      "detections": 18,
+      "avg_confidence": 0.903,
+      "avg_maturity": 0.533,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 7,
+        "Unripe": 7
+      }
+    },
+    {
+      "filename": "IMG_1271.jpg",
+      "detections": 13,
+      "avg_confidence": 0.902,
+      "avg_maturity": 0.477,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 1,
+        "Unripe": 8
+      }
+    },
+    {
+      "filename": "IMG_20191215_111245.jpg",
+      "detections": 14,
+      "avg_confidence": 0.899,
+      "avg_maturity": 0.286,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 1,
+        "Unripe": 12
+      }
+    },
+    {
+      "filename": "IMG_1088.jpg",
+      "detections": 2,
+      "avg_confidence": 0.898,
+      "avg_maturity": 1.0,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 0,
+        "Unripe": 0
+      }
+    },
+    {
+      "filename": "IMG_20191215_111343.jpg",
+      "detections": 8,
+      "avg_confidence": 0.897,
+      "avg_maturity": 0.35,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 1,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_20191215_110743.jpg",
+      "detections": 9,
+      "avg_confidence": 0.896,
+      "avg_maturity": 0.689,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 5,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_111744.jpg",
+      "detections": 12,
+      "avg_confidence": 0.894,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 12
+      }
+    },
+    {
+      "filename": "IMG_20191215_111501.jpg",
+      "detections": 6,
+      "avg_confidence": 0.893,
+      "avg_maturity": 0.267,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 5
+      }
+    },
+    {
+      "filename": "IMG_20191215_112403.jpg",
+      "detections": 7,
+      "avg_confidence": 0.893,
+      "avg_maturity": 0.257,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 6
+      }
     },
     {
       "filename": "IMG_1034.jpg",
-      "scene": "unknown",
-      "detections": 1,
-      "avg_confidence": 0.829,
-      "avg_maturity": 0.997
+      "detections": 6,
+      "avg_confidence": 0.885,
+      "avg_maturity": 0.467,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 2,
+        "Unripe": 3
+      }
     },
     {
-      "filename": "IMG_1137.jpg",
-      "scene": "unknown",
-      "detections": 4,
-      "avg_confidence": 0.819,
-      "avg_maturity": 0.866
+      "filename": "IMG_20191215_112551.jpg",
+      "detections": 27,
+      "avg_confidence": 0.883,
+      "avg_maturity": 0.319,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 0,
+        "Unripe": 23
+      }
     },
     {
-      "filename": "IMG_20191215_112517.jpg",
-      "scene": "unknown",
-      "detections": 3,
-      "avg_confidence": 0.818,
-      "avg_maturity": 0.931
+      "filename": "IMG_20191215_111554.jpg",
+      "detections": 8,
+      "avg_confidence": 0.879,
+      "avg_maturity": 0.25,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 7
+      }
     },
     {
-      "filename": "IMG_20191215_112904.jpg",
-      "scene": "unknown",
+      "filename": "IMG_20191215_112519.jpg",
+      "detections": 10,
+      "avg_confidence": 0.878,
+      "avg_maturity": 0.28,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 8
+      }
+    },
+    {
+      "filename": "IMG_20191215_111404.jpg",
+      "detections": 10,
+      "avg_confidence": 0.875,
+      "avg_maturity": 0.32,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 3,
+        "Unripe": 7
+      }
+    },
+    {
+      "filename": "IMG_20191215_112012.jpg",
+      "detections": 15,
+      "avg_confidence": 0.875,
+      "avg_maturity": 0.52,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 6,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_20191215_111654.jpg",
+      "detections": 8,
+      "avg_confidence": 0.869,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 8
+      }
+    },
+    {
+      "filename": "IMG_20191215_110956.jpg",
       "detections": 5,
-      "avg_confidence": 0.815,
-      "avg_maturity": 0.972
+      "avg_confidence": 0.866,
+      "avg_maturity": 0.6,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 1,
+        "Unripe": 2
+      }
     },
     {
-      "filename": "IMG_20191215_112033.jpg",
-      "scene": "unknown",
-      "detections": 2,
-      "avg_confidence": 0.814,
-      "avg_maturity": 0.94
+      "filename": "IMG_20191215_112854.jpg",
+      "detections": 35,
+      "avg_confidence": 0.866,
+      "avg_maturity": 0.44,
+      "class_counts": {
+        "Fully-ripe": 5,
+        "Semi-ripe": 11,
+        "Unripe": 19
+      }
     },
     {
-      "filename": "IMG_20191215_111517.jpg",
-      "scene": "unknown",
-      "detections": 1,
-      "avg_confidence": 0.808,
-      "avg_maturity": 0.875
-    },
-    {
-      "filename": "IMG_1269.jpg",
-      "scene": "unknown",
-      "detections": 7,
-      "avg_confidence": 0.804,
-      "avg_maturity": 0.952
+      "filename": "IMG_1203.jpg",
+      "detections": 11,
+      "avg_confidence": 0.865,
+      "avg_maturity": 0.273,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 9
+      }
     },
     {
       "filename": "IMG_1284.jpg",
-      "scene": "unknown",
+      "detections": 12,
+      "avg_confidence": 0.865,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 12
+      }
+    },
+    {
+      "filename": "IMG_20191215_112805.jpg",
+      "detections": 23,
+      "avg_confidence": 0.863,
+      "avg_maturity": 0.235,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 21
+      }
+    },
+    {
+      "filename": "IMG_1289.jpg",
+      "detections": 17,
+      "avg_confidence": 0.862,
+      "avg_maturity": 0.341,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 4,
+        "Unripe": 12
+      }
+    },
+    {
+      "filename": "IMG_20191215_111613.jpg",
+      "detections": 7,
+      "avg_confidence": 0.862,
+      "avg_maturity": 0.429,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 4,
+        "Unripe": 3
+      }
+    },
+    {
+      "filename": "IMG_20191215_112036.jpg",
+      "detections": 8,
+      "avg_confidence": 0.861,
+      "avg_maturity": 0.55,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 1,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_112515.jpg",
+      "detections": 14,
+      "avg_confidence": 0.861,
+      "avg_maturity": 0.686,
+      "class_counts": {
+        "Fully-ripe": 8,
+        "Semi-ripe": 1,
+        "Unripe": 5
+      }
+    },
+    {
+      "filename": "IMG_1031.jpg",
+      "detections": 3,
+      "avg_confidence": 0.86,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 3
+      }
+    },
+    {
+      "filename": "IMG_20191215_111521.jpg",
+      "detections": 5,
+      "avg_confidence": 0.858,
+      "avg_maturity": 0.52,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 2,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_1116.jpg",
+      "detections": 27,
+      "avg_confidence": 0.857,
+      "avg_maturity": 0.274,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 3,
+        "Unripe": 23
+      }
+    },
+    {
+      "filename": "IMG_1139.jpg",
+      "detections": 12,
+      "avg_confidence": 0.856,
+      "avg_maturity": 0.267,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 10
+      }
+    },
+    {
+      "filename": "IMG_0983.jpg",
+      "detections": 4,
+      "avg_confidence": 0.854,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_111517.jpg",
+      "detections": 5,
+      "avg_confidence": 0.851,
+      "avg_maturity": 0.36,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 3
+      }
+    },
+    {
+      "filename": "IMG_1012.jpg",
       "detections": 9,
+      "avg_confidence": 0.849,
+      "avg_maturity": 0.289,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 7
+      }
+    },
+    {
+      "filename": "IMG_1242.jpg",
+      "detections": 13,
+      "avg_confidence": 0.846,
+      "avg_maturity": 0.569,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 4,
+        "Unripe": 5
+      }
+    },
+    {
+      "filename": "IMG_20191215_111926.jpg",
+      "detections": 13,
+      "avg_confidence": 0.846,
+      "avg_maturity": 0.508,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 4,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_1028.jpg",
+      "detections": 10,
+      "avg_confidence": 0.842,
+      "avg_maturity": 0.56,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 5,
+        "Unripe": 3
+      }
+    },
+    {
+      "filename": "IMG_1119.jpg",
+      "detections": 42,
+      "avg_confidence": 0.842,
+      "avg_maturity": 0.229,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 3,
+        "Unripe": 39
+      }
+    },
+    {
+      "filename": "IMG_20191215_111126.jpg",
+      "detections": 22,
+      "avg_confidence": 0.841,
+      "avg_maturity": 0.309,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 2,
+        "Unripe": 18
+      }
+    },
+    {
+      "filename": "IMG_1016.jpg",
+      "detections": 7,
+      "avg_confidence": 0.84,
+      "avg_maturity": 0.257,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_20191215_111316.jpg",
+      "detections": 20,
+      "avg_confidence": 0.84,
+      "avg_maturity": 0.38,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 5,
+        "Unripe": 13
+      }
+    },
+    {
+      "filename": "IMG_20191215_111936.jpg",
+      "detections": 13,
+      "avg_confidence": 0.839,
+      "avg_maturity": 0.292,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 3,
+        "Unripe": 10
+      }
+    },
+    {
+      "filename": "IMG_20191215_112553.jpg",
+      "detections": 15,
+      "avg_confidence": 0.839,
+      "avg_maturity": 0.573,
+      "class_counts": {
+        "Fully-ripe": 6,
+        "Semi-ripe": 2,
+        "Unripe": 7
+      }
+    },
+    {
+      "filename": "IMG_20191215_111445.jpg",
+      "detections": 15,
+      "avg_confidence": 0.838,
+      "avg_maturity": 0.28,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 1,
+        "Unripe": 13
+      }
+    },
+    {
+      "filename": "IMG_20191215_111329.jpg",
+      "detections": 11,
+      "avg_confidence": 0.837,
+      "avg_maturity": 0.527,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 5,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_112517.jpg",
+      "detections": 23,
+      "avg_confidence": 0.835,
+      "avg_maturity": 0.496,
+      "class_counts": {
+        "Fully-ripe": 8,
+        "Semi-ripe": 1,
+        "Unripe": 14
+      }
+    },
+    {
+      "filename": "IMG_20191215_112033.jpg",
+      "detections": 10,
+      "avg_confidence": 0.834,
+      "avg_maturity": 0.36,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 4,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_20191215_111342.jpg",
+      "detections": 6,
+      "avg_confidence": 0.832,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_20191215_111154.jpg",
+      "detections": 4,
+      "avg_confidence": 0.831,
+      "avg_maturity": 0.5,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 3,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_112848.jpg",
+      "detections": 27,
+      "avg_confidence": 0.831,
+      "avg_maturity": 0.407,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 8,
+        "Unripe": 16
+      }
+    },
+    {
+      "filename": "IMG_20191215_110600.jpg",
+      "detections": 20,
+      "avg_confidence": 0.826,
+      "avg_maturity": 0.52,
+      "class_counts": {
+        "Fully-ripe": 5,
+        "Semi-ripe": 6,
+        "Unripe": 9
+      }
+    },
+    {
+      "filename": "IMG_1298.jpg",
+      "detections": 22,
+      "avg_confidence": 0.824,
+      "avg_maturity": 0.309,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 6,
+        "Unripe": 16
+      }
+    },
+    {
+      "filename": "IMG_20191215_111400.jpg",
+      "detections": 5,
+      "avg_confidence": 0.824,
+      "avg_maturity": 0.36,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 3
+      }
+    },
+    {
+      "filename": "IMG_20191215_111857.jpg",
+      "detections": 40,
+      "avg_confidence": 0.824,
+      "avg_maturity": 0.38,
+      "class_counts": {
+        "Fully-ripe": 5,
+        "Semi-ripe": 8,
+        "Unripe": 27
+      }
+    },
+    {
+      "filename": "IMG_1269.jpg",
+      "detections": 29,
+      "avg_confidence": 0.818,
+      "avg_maturity": 0.545,
+      "class_counts": {
+        "Fully-ripe": 8,
+        "Semi-ripe": 9,
+        "Unripe": 12
+      }
+    },
+    {
+      "filename": "IMG_1115.jpg",
+      "detections": 56,
+      "avg_confidence": 0.817,
+      "avg_maturity": 0.25,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 5,
+        "Unripe": 50
+      }
+    },
+    {
+      "filename": "IMG_20191215_111520.jpg",
+      "detections": 6,
+      "avg_confidence": 0.814,
+      "avg_maturity": 0.667,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 1,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_20191215_111430.jpg",
+      "detections": 21,
+      "avg_confidence": 0.81,
+      "avg_maturity": 0.276,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 2,
+        "Unripe": 18
+      }
+    },
+    {
+      "filename": "IMG_20191215_111526.jpg",
+      "detections": 14,
+      "avg_confidence": 0.809,
+      "avg_maturity": 0.314,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 2,
+        "Unripe": 11
+      }
+    },
+    {
+      "filename": "IMG_0986.jpg",
+      "detections": 7,
+      "avg_confidence": 0.807,
+      "avg_maturity": 0.657,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 4,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_110817.jpg",
+      "detections": 3,
+      "avg_confidence": 0.807,
+      "avg_maturity": 0.733,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 0,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_20191215_112619.jpg",
+      "detections": 11,
+      "avg_confidence": 0.807,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 11
+      }
+    },
+    {
+      "filename": "IMG_20191215_112428.jpg",
+      "detections": 20,
+      "avg_confidence": 0.806,
+      "avg_maturity": 0.46,
+      "class_counts": {
+        "Fully-ripe": 3,
+        "Semi-ripe": 7,
+        "Unripe": 10
+      }
+    },
+    {
+      "filename": "IMG_1122.jpg",
+      "detections": 37,
+      "avg_confidence": 0.805,
+      "avg_maturity": 0.254,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 5,
+        "Unripe": 32
+      }
+    },
+    {
+      "filename": "IMG_1233.jpg",
+      "detections": 15,
+      "avg_confidence": 0.804,
+      "avg_maturity": 0.467,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 2,
+        "Unripe": 9
+      }
+    },
+    {
+      "filename": "IMG_1093.jpg",
+      "detections": 9,
+      "avg_confidence": 0.801,
+      "avg_maturity": 0.556,
+      "class_counts": {
+        "Fully-ripe": 2,
+        "Semi-ripe": 4,
+        "Unripe": 3
+      }
+    },
+    {
+      "filename": "IMG_1150.jpg",
+      "detections": 22,
+      "avg_confidence": 0.801,
+      "avg_maturity": 0.236,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 20
+      }
+    },
+    {
+      "filename": "IMG_1180.jpg",
+      "detections": 72,
       "avg_confidence": 0.799,
-      "avg_maturity": 0.953
+      "avg_maturity": 0.272,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 13,
+        "Unripe": 59
+      }
+    },
+    {
+      "filename": "IMG_20191215_111453.jpg",
+      "detections": 7,
+      "avg_confidence": 0.797,
+      "avg_maturity": 0.257,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 1,
+        "Unripe": 6
+      }
+    },
+    {
+      "filename": "IMG_20191215_111617.jpg",
+      "detections": 4,
+      "avg_confidence": 0.796,
+      "avg_maturity": 0.6,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 2,
+        "Unripe": 1
+      }
+    },
+    {
+      "filename": "IMG_1160.jpg",
+      "detections": 14,
+      "avg_confidence": 0.784,
+      "avg_maturity": 0.257,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 2,
+        "Unripe": 12
+      }
+    },
+    {
+      "filename": "IMG_0992.jpg",
+      "detections": 4,
+      "avg_confidence": 0.769,
+      "avg_maturity": 0.2,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 0,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_112904.jpg",
+      "detections": 30,
+      "avg_confidence": 0.768,
+      "avg_maturity": 0.48,
+      "class_counts": {
+        "Fully-ripe": 8,
+        "Semi-ripe": 5,
+        "Unripe": 17
+      }
+    },
+    {
+      "filename": "IMG_1183.jpg",
+      "detections": 41,
+      "avg_confidence": 0.761,
+      "avg_maturity": 0.327,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 11,
+        "Unripe": 29
+      }
+    },
+    {
+      "filename": "IMG_1187.jpg",
+      "detections": 76,
+      "avg_confidence": 0.761,
+      "avg_maturity": 0.247,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 7,
+        "Unripe": 68
+      }
+    },
+    {
+      "filename": "IMG_20191215_112831.jpg",
+      "detections": 21,
+      "avg_confidence": 0.759,
+      "avg_maturity": 0.733,
+      "class_counts": {
+        "Fully-ripe": 11,
+        "Semi-ripe": 6,
+        "Unripe": 4
+      }
+    },
+    {
+      "filename": "IMG_20191215_111202.jpg",
+      "detections": 15,
+      "avg_confidence": 0.753,
+      "avg_maturity": 0.413,
+      "class_counts": {
+        "Fully-ripe": 1,
+        "Semi-ripe": 6,
+        "Unripe": 8
+      }
+    },
+    {
+      "filename": "IMG_1297.jpg",
+      "detections": 9,
+      "avg_confidence": 0.737,
+      "avg_maturity": 0.511,
+      "class_counts": {
+        "Fully-ripe": 0,
+        "Semi-ripe": 7,
+        "Unripe": 2
+      }
+    },
+    {
+      "filename": "IMG_1146.jpg",
+      "detections": 33,
+      "avg_confidence": 0.726,
+      "avg_maturity": 0.382,
+      "class_counts": {
+        "Fully-ripe": 4,
+        "Semi-ripe": 7,
+        "Unripe": 22
+      }
+    },
+    {
+      "filename": "IMG_1137.jpg",
+      "detections": 47,
+      "avg_confidence": 0.717,
+      "avg_maturity": 0.379,
+      "class_counts": {
+        "Fully-ripe": 5,
+        "Semi-ripe": 11,
+        "Unripe": 31
+      }
     }
   ]
 }
